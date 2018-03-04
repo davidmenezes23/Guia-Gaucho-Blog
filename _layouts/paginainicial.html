@@ -33,7 +33,7 @@
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/_pages/search.json',
-        searchResultTemplate: '<a class="searchlink" href="{url}"><div class="searchresuk"><img class="thumbpesquisa" src="https://www.guiagaucho.com/{thumb}"/><li class="searchli">{title}</li></div></a>',
+        searchResultTemplate: '<a class="searchlink" href="{url}"><div class="searchresuk"><img class="thumbpesquisa" src="https://blog.guiagaucho.com/{thumb}"/><li class="searchli">{title}</li></div></a>',
         noResultsText: 'No results found',
         limit: 10,
         fuzzy: false,
@@ -47,7 +47,7 @@
     </div>
   </body>
 </html>
-<a href="https://www.guiagaucho.com/{{ page.cidade }}/"><h2 class="conteudotitulocidade"><b>Postagens Recentes</b></h2></a>
+<h2 class="conteudotitulocidade"><b>Postagens Recentes</b></h2>
 <h2 class="coluna2titulo"><b>Anúncio</b></h2>
 <div id="chartdiv" class="conteudocidade">
   {% if site.theme_settings.header_text %}
