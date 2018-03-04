@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://www.guiagaucho.com"
+url: "https://blog.guiagaucho.com"
 
 # THEME-SPECIFIC CONFIGURATION
 include: ["_pages"]
