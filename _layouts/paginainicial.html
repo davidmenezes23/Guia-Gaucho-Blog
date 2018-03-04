@@ -84,21 +84,7 @@
     </div></div>
     {% endfor %}
   </div>
-</div>
-<div id="botaovermaismobile" class="vermaisdivmobile"><button class="vermais" onClick="document.getElementById('chartdiv').style.height = '100%';document.getElementById('botaovermaismobile').style.display = 'none';">Ver Mais</button></div>
-<div class="coluna">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-    style="display:block"
-     data-ad-client="ca-pub-2816982644079927"
-     data-ad-slot="5558915229"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-<!-- Pagination links -->
-<div class="pagination">
+  <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
   {% else %}
@@ -110,5 +96,17 @@
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
+</div>
+</div>
+<div class="coluna">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+     data-ad-client="ca-pub-2816982644079927"
+     data-ad-slot="5558915229"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>
 {% include footer.html %}
