@@ -13,9 +13,6 @@
 <a href='https://www.guiagaucho.com/{{ page.cidade }}/' style='text-decoration:none;color:#fff;'>Inicio</a>
   </div>
 <div class='menuitem'>
-<a href='{{ site.baseurl }}/cadastro/' style='text-decoration:none;color:#fff;'>Cadastro</a>
-  </div>
-<div class='menuitem'>
 <a href='{{ site.baseurl }}/sobre/' style='text-decoration:none;color:#fff;'>Sobre</a>
   </div>
 <div class='menuitem'>
@@ -35,7 +32,7 @@
       window.simpleJekyllSearch = new SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.baseurl }}/_pages/{{ page.cidade }}.json',
+        json: '{{ site.baseurl }}/_pages/search.json',
         searchResultTemplate: '<a class="searchlink" href="{url}"><div class="searchresuk"><img class="thumbpesquisa" src="https://www.guiagaucho.com/{thumb}"/><li class="searchli">{title}</li></div></a>',
         noResultsText: 'No results found',
         limit: 10,
