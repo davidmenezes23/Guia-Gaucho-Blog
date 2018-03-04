@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  {% include head.html %}
+  {% include pagecadastrodescription.html %}
+  </head>
+  <body>
+<header class="site-header">
+<div class='headercabecalho'>
+<a href='{{ site.url }}'><img alt='Guia Gaúcho Logotipo' class='imagelogo' src='{{ site.url }}/assets/img/images/Guia-Gaucho-logo.png'/></a>
+<div class='menuheader'>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/cadastro/' style='text-decoration:none;color:#fff;'>Cadastro</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/sobre/' style='text-decoration:none;color:#fff;'>Sobre</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/contato/' style='text-decoration:none;color:#fff;'>Contato</a>
+  </div>
+  </div>
+</div>
+<div class="pesquisatermo3">
+<div class="pesquisatermo2" id="search-demo-container">
+<input type="text" class="pesquisatermo" id="search-input" placeholder="Buscar...">
+<ul class="resultados" id="results-container"></ul>
+</div>
+</div>
+<script>
+      window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/_pages/uruguaiana.json',
+        searchResultTemplate: '<a class="searchlink" href="{url}"><li class="searchli">{title}</li></a>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+</script> 
+</header>
+<div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>
+<h1 class="conteudotitulo"><b>Guia Gaúcho - Cadastro</b></h1>
+<h2 class="coluna2titulo"><b>Anúncio</b></h2>
+<div class="conteudo">
+  {% if site.theme_settings.header_text %}
+  <div id="main" class="call-out"
+  style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
+    {{ site.theme_settings.header_text }}
+  </div>
+  {% endif %}
+  <div class="posts">
+    <div class="post-teaser1"><div class="post-teaser">        
+<div class="cadastroopcao1">
+<p><b>Cadastro Destaque</b></p>
+<img class="cadastroimagem" alt="Guia Gaúcho Exemplo de cadastro destaque"  src="https://www.guiagaucho.com/assets/img/images/destaque-exemplo.png"/>
+<div class="cadastroconteudo">
+<b>Recursos</b>
+<p>- Destaque de cores<br/>
+- Seção destaque na Cidade<br/>
+- Seção destaque nas categorias<br/>
+- Entre os primeiros resultados da pesquisa<br/>
+- Atendimento privilegiado<br/>
+- Moderação dos comentarios<br/>
+- Cadastro com logotipo<br/>
+- Endereço e Localização<br/>
+- Número para contato
+</p>
+<b>Preço: R$10,00 / Mês</b>
+<br/><br/><div class="escolher"><button class="escolherdestaque" onClick="document.getElementById('cadastrodestaque').style.display = 'block';document.getElementById('cadastro').style.display = 'none';">Indisponivel</button></div><br/> 
+</div>
+</div>
+<div class="cadastroopcao2">
+<p><b>Cadastro Básico</b></p>
+<img class="cadastroimagem" alt="Guia Gaúcho Exemplo de cadastro"  src="https://www.guiagaucho.com/assets/img/images/cadastro-exemplo.png"/>
+<div class="cadastroconteudo">
+<b>Recursos</b>
+<p>- Cadastro com logotipo<br/>
+- Endereço e Localização<br/>
+- Número para contato<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</p>
+<b>Preço: Gratuito</b>
+<br/><br/><div class="escolher"><button class="escolhercadastro" onClick="document.getElementById('cadastro').style.display = 'block';document.getElementById('cadastrodestaque').style.display = 'none';">Escolher</button></div><br/> 
+</div>
+</div>
+<br/>
+<br/>
+<div id="cadastro" class="formulariocadastro">
+<form action="https://formspree.io/contato@guiagaucho.com" method="POST">
+<span>Formulario de Cadastro Básico</span><br/>
+<span style="color: #f00;">*Obrigatório</span><br/>
+<p>Nome da Empresa<span style="color: #f00;">*</span></p><input type="text" name="Nome" placeholder="Nome do Negócio"/>
+<p>Descrição</p><textarea name="Descrição" placeholder="Descrição dos serviços prestados pela empresa"></textarea>
+<p>Cidade<span style="color: #f00;">*</span></p><input name="Cidade" placeholder="Santa Maria - RS"/>
+<p>Endereço<span style="color: #f00;">*</span></p><input name="Endereço" placeholder="Rua Guia Gaúcho, 9999"/>
+<p>Telefone<span style="color: #f00;">*</span></p><input name="Telefone" placeholder="(55) 9999-999"/><input name="Telefone" placeholder="(55) 9999-999"/><input name="Telefone" placeholder="(55) 9999-999"/>
+<p>Logotipo (hospedar em: <a target="_blank" href="https://imgur.com">https://imgur.com</a>)</p><input name="Logotipo" placeholder="https://imgur.com/imagem"/>
+<p>E-mail<span style="color: #f00;">*</span></p><input type="email" name="Email" placeholder="contato@guiagaucho.com"/>
+<input type="hidden" name="_subject" value="Guia Gaúcho Cadastro" /><input type="hidden" name="_next" value="//www.guiagaucho.com/obrigado/" />
+<input type="submit" value="Enviar"/>
+</form></div>
+<div id="cadastrodestaque" class="formulariocadastrodestaque">
+<form action="https://formspree.io/contato@guiagaucho.com" method="POST">
+<span>Formulario de Cadastro Destaque</span><br/>
+<span style="color: #f00;">*Obrigatório</span><br/>
+<p>Nome da Empresa<span style="color: #f00;">*</span></p><input type="text" name="Nomedestaque" placeholder="Nome do Negócio"/>
+<p>Descrição</p><textarea name="Descriçãodestaque" placeholder="Descrição dos serviços prestados pela empresa"></textarea>
+<p>Cidade<span style="color: #f00;">*</span></p><input name="Cidadedestaque" placeholder="Santa Maria - RS"/>
+<p>Endereço<span style="color: #f00;">*</span></p><input name="Endereçodestaque" placeholder="Rua Guia Gaúcho, 9999"/>
+<p>Telefone<span style="color: #f00;">*</span></p><input name="Telefonedestaque" placeholder="(55) 9999-999"/><input name="Telefonedestaque" placeholder="(55) 9999-999"/><input name="Telefonedestaque" placeholder="(55) 9999-999"/>
+<p>Logotipo (hospedar em: <a target="_blank" href="https://imgur.com">https://imgur.com</a>)</p><input name="Logotipodestaque" placeholder="https://imgur.com/imagem"//>
+<p>E-mail<span style="color: #f00;">*</span></p><input type="email" name="Emaildestaque" placeholder="contato@guiagaucho.com"/>
+<input type="hidden" name="_subject" value="Guia Gaúcho Cadastro" /><input type="hidden" name="_next" value="//www.guiagaucho.com/obrigado/" />
+<input type="submit" value="Enviar"/>
+</form></div>
+      <script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/contato@guiagaucho.com');
+</script>
+    </div></div>
+  </div>
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+      <i class="fa fa-chevron-left"></i>
+      {{ site.theme_settings.str_previous_page }}
+    </a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+      {{ site.theme_settings.str_next_page }}
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+<div class="coluna">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- guiagaucho -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2816982644079927"
+     data-ad-slot="5558915229"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+    {% include footer.html %}

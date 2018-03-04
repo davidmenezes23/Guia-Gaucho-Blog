@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  {% include head.html %}
+  {% include cidadedescription.html %}
+  </head>
+  <body>
+<header class="site-header">
+<div class='headercabecalho'>
+<a href='{{ site.url }}'><img alt='Guia Gaúcho Logotipo' class='imagelogo' src='{{ site.url }}/assets/img/images/Guia-Gaucho-logo.png'/></a>
+<div class='menuheader'>
+<div class='menuitem'>
+<a href='https://www.guiagaucho.com/{{ page.cidade }}/' style='text-decoration:none;color:#fff;'>Inicio</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/cadastro/' style='text-decoration:none;color:#fff;'>Cadastro</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/sobre/' style='text-decoration:none;color:#fff;'>Sobre</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/contato/' style='text-decoration:none;color:#fff;'>Contato</a>
+  </div>
+  </div>
+</div>
+  
+  
+  <div class="pesquisatermo3">
+      <div class="pesquisatermo2" id="search-demo-container">
+      <input type="text" class="pesquisatermo" id="search-input" placeholder="Buscar...">
+      <ul class="resultados" id="results-container"></ul>
+    </div>
+  </div>
+    <script>
+      window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/_pages/{{ page.cidade }}.json',
+        searchResultTemplate: '<a class="searchlink" href="{url}"><div class="searchresuk"><img class="thumbpesquisa" src="https://www.guiagaucho.com/{thumb}"/><li class="searchli">{title}</li></div></a>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+    </script>
+  
+</header>
+<div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>
+<h2 class='coluna1titulo'><b>Categorias</b></h2>
+<a href="https://www.guiagaucho.com/{{ page.cidade }}/"><h1 class="conteudotitulocidade"><b>{{ page.title }}</b></h1></a>
+<h2 class="coluna2titulo"><b>Anúncio</b></h2>
+<div class='Coluna1'>
+    <div class='Coluna1conteudo'>
+<table width='100%'>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/automovel/"><div class='categoriaitem'>Automóvel</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/construcao/"><div class='categoriaitem'>Construção</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/cultura/"><div class='categoriaitem'>Cultura</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/alimentacao/"><div class='categoriaitem'>Alimentação</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/industria-e-maquinas/"><div class='categoriaitem'>Indústria e Máquinas</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/juridico-e-contabil/"><div class='categoriaitem'>Jurídico e Contábil</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/moda-e-beleza/"><div class='categoriaitem'>Moda e Beleza</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/moveis/"><div class='categoriaitem'>Móveis</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/entreterimento/"><div class='categoriaitem'>Entreterimento</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/rural/"><div class='categoriaitem'>Rural</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/saude/"><div class='categoriaitem'>Saúde</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/marketing/"><div class='categoriaitem'>Marketing</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/tecnologia/"><div class='categoriaitem'>Tecnologia</div></a></th></tr>
+<tr><th><a class='categorialink' href="{{ site.url }}/{{ page.cidade }}/turismo/"><div class='categoriaitem'>Turismo</div></a></th></tr>
+</table>
+    </div>
+  </div>
+<div id="chartdiv" class="conteudocidade">
+  {% if site.theme_settings.header_text %}
+  <div id="main" class="call-out"
+  style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
+    {{ site.theme_settings.header_text }}
+  </div>
+  {% endif %}
+
+  <div class="posts">
+<script type="text/javascript">
+    var randomIndexUsed = [];
+    var counter = 0;
+    var numberOfPosts = postsNumeroD;
+    while (counter < numberOfPosts)
+    {
+        var randomIndex;
+        var postHREFD;
+        var postTitleD;
+        var postMiniaturaD;
+        var postDescricaoD;
+        var postEstrelaD;
+        randomIndex = Math.floor(Math.random() * postsHREFD.length);
+        if (randomIndexUsed.indexOf(randomIndex) == "-1")
+        {
+            postHREFD = postsHREFD[randomIndex];
+            postTitleD = postsTitleD[randomIndex];
+            postMiniaturaD = postsMiniaturaD[randomIndex];
+            postDescricaoD = postsDescricaoD[randomIndex];
+            postEstrelaD = postsEstrelaD[randomIndex];
+                document.write('<div class="post-teaser1"><div class="post-teaser"><a class="post-link" href="' + postHREFD + '"><img class="postthumb" alt="' + postTitleD + ' Logo" src="/' + postMiniaturaD + '"/></a><span class="tituloedescricao"><header><h1 class="titulopost"><a class="post-link" href="' + postHREFD + '">' + postTitleD + '</a></h1></header><div class="excerpt">' + postDescricaoD + '</div></span><div class="caixainfodestaque"><div class="caixainfo1destaque"><div class="infobuton1"><div class="infobuton"><a class="infobutonadestaque" href="' + postHREFD + '">Informações</a></div></div></div><div class="caixainfodestaque2"><img class="estrela" src="https://www.guiagaucho.com/assets/img/images/' + postEstrelaD + '.png"/></div></div><br/></div></div>');
+            randomIndexUsed.push(randomIndex);
+            counter++;
+        }
+    }
+</script>
+<script type="text/javascript">
+    var randomIndexUsed = [];
+    var counter = 0;
+    var numberOfPosts = postsNumero;
+    while (counter < numberOfPosts)
+    {
+        var randomIndex;
+        var postHREF;
+        var postTitle;
+        var postMiniatura;
+        var postDescricao;
+        var postEstrela;
+        randomIndex = Math.floor(Math.random() * postsHREF.length);
+        if (randomIndexUsed.indexOf(randomIndex) == "-1")
+        {
+            postHREF = postsHREF[randomIndex];
+            postTitle = postsTitle[randomIndex];
+            postMiniatura = postsMiniatura[randomIndex];
+            postDescricao = postsDescricao[randomIndex];
+            postEstrela = postsEstrela[randomIndex];
+                document.write('<div class="post-teaser1"><div class="post-teaser"><a class="post-link" href="' + postHREF + '"><img class="postthumb" alt="' + postTitle + ' Logo" src="/' + postMiniatura + '"/></a><span class="tituloedescricao"><header><h1 class="titulopost"><a class="post-link" href="' + postHREF + '">' + postTitle + '</a></h1></header><div class="excerpt">' + postDescricao + '</div></span><div class="caixainfo"><div class="caixainfo1"><div class="infobuton1"><div class="infobuton"><a class="infobutona" href="' + postHREF + '">Informações</a></div></div></div><div class="caixainfo2"><img class="estrela" src="https://www.guiagaucho.com/assets/img/images/' + postEstrela + '.png"/></div></div><br/></div></div>');
+            randomIndexUsed.push(randomIndex);
+            counter++;
+        }
+    }
+</script>
+  </div>
+</div>
+<div id="botaovermaismobile" class="vermaisdivmobile"><button class="vermais" onClick="document.getElementById('chartdiv').style.height = '100%';document.getElementById('botaovermaismobile').style.display = 'none';">Ver Mais</button></div>
+<div class="coluna">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+    style="display:block"
+     data-ad-client="ca-pub-2816982644079927"
+     data-ad-slot="5558915229"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+  <div id="botaovermais" class="vermaisdiv"><button class="vermais" onClick="document.getElementById('chartdiv').style.height = '100%';document.getElementById('botaovermais').style.display = 'none';">Ver Mais</button></div>
+  {% include footer.html %}

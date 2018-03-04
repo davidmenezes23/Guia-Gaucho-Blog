@@ -1,0 +1,85 @@
+body{background-image:url(https://i.imgur.com/v0fcWrZ.png);background-color:#efefef;background-size:60%;background-repeat-y:no-repeat;font-family:arial;padding:0px;margin:0px;}
+.postthumb{width:20%;display:inline-block;padding:2%;vertical-align:top;}
+.tituloedescricao{width:60%;padding:2%;display:inline-block;vertical-align:top;}
+.tituloedescricaodestaque{width:60%;padding:2%;display:inline-block;vertical-align:top;color:#fff;}
+.tituloedescricao2{width:96%;padding:2%;display:inline-block;vertical-align:top;}
+.conteudo{width:70%;display:inline-block;padding-top:10px;padding-bottom:10px;padding-left:5%;}
+.coluna{width:14.4%;padding-left:5%;padding-right:5%;display:inline-block;vertical-align:top;padding-top:10px;padding-bottom:10px;}
+.post-teaser{box-shadow:1px 1px 6px #00000057;border-radius:5px;}
+.post-teaserdestaque{box-shadow:1px 1px 6px #00000057;border-radius:5px;background-color:#ff8f00;}
+.post-teaser1{padding-bottom:20px;padding-right:20px;padding-left:20px;}
+.posts{background-color:#fff;padding-top:20px;border-radius:5px;}
+.headercabecalho{width:100%;height:100px;background-color:#00000096;}
+.imagelogo{height:80%;padding-top:10px;padding-left:20px;display:inline-block;}
+.menuheader{width:70%;padding:21.5px;font-size:larger;text-align:end;display:inline-block;vertical-align:top;}
+.menuitem{display:inline-block;font-size:larger;width:15%;color:#fff;text-align:center;}
+.coluna2titulo{font-size:larger;color:#00ab3a;text-align:center;display:inline-block;width:14.4%;padding-left:5%;padding-right:5%;padding-top:20px;}
+.conteudotitulo{font-size:larger;color:#00ab3a;text-align:center;display:inline-block;width:70%;padding-top:20px;padding-left:5%;}
+.pesquisatermo{width:100%;height:100%;vertical-align:middle;padding:0px;border-width:0px;border-radius:2px;font-size:larger;padding-left:10px;border-radius:5px;}
+.pesquisatermo2{width:60%;height:100%;display:inline-block;box-shadow:1px 1px 6px #00000057;}
+.pesquisatermo3{width:100%;height:60px;display:inline-block;text-align:center;}
+.resultados{display:block;list-style-type:none;-webkit-margin-before:0px;-webkit-margin-after:0px;-webkit-margin-start:0px;-webkit-margin-end:0px;-webkit-padding-start:0px;background-color:#00ab3a;border-radius:5px;font-size:larger;}
+.searchlink{text-decoration:none;color:#fff;}
+.searchli{padding:5px;}
+.post-link{font-size:larger;text-decoration:none;color:#00ab3a;}
+.post-linkdestaque{font-size:larger;text-decoration:none;color:#fff;}
+.titulopost{font-size:larger;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0px;font-weight:bold;padding-bottom:10px;}
+.escolhabotao{background-color:#00ab3a;color:white;width:100%;padding:16px;font-size:larger;border:none;cursor:pointer;}
+.escolha{width:100%;}
+.escolha2{width:60%;padding-left:20%;padding-top:120px;padding-bottom:120px;}
+.escolha-content{display:none;background-color:#f9f9f9;width:100%;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;}
+.escolha-content a{color:black;padding:12px 16px;text-decoration:none;display:block;}
+.escolha-content a:hover{background-color:#f1f1f1}
+.escolha:hover .escolha-content{display:block;}
+.escolha:hover .escolhabotao{background-color:#3e8e41;}
+.coluna2{width:96%;padding-left:2%;padding-right:2%;display:inline-block;vertical-align:bottom;padding-bottom:10px;}
+.coluna2titulo2{font-size:larger;color:#00ab3a;text-align:center;display:inline-block;width:100%;}
+.conteudopost2{padding:2%;width:96%;display:inline-block;}
+.ligar{display:none;}
+.conteudocidade{width:50%;display:inline-block;padding-top:10px;padding-bottom:10px;height:750px;overflow: hidden !important;}
+.conteudotitulocidade{font-size:larger;color:#00ab3a;text-align:center;display:inline-block;width:50%;padding-top:20px;}
+.Coluna1{width:14.4%;padding-left:5%;padding-right:5%;display:inline-block;vertical-align:top;padding-top:10px;padding-bottom:10px;}
+.Coluna1conteudo{width:92%;border-radius:5px;background-color:#ffffff;padding:4%;}
+.coluna1titulo{font-size:larger;color:#00ab3a;text-align:center;display:inline-block;width:14.4%;padding-left:5%;padding-right:5%;padding-top:20px;}
+.categoriaitem:hover{background-image:url("https://i.imgur.com/Lyyywvv.png");background-size:10% 100%;background-repeat:repeat-y;cursor:pointer;}
+.categoriaitem{width:92%;border-radius:5px;background-color:#fff;padding:4%;text-decoration:none;box-shadow:1px 1px 6px #00000017;}
+.categorialink{text-decoration:none;color:black;}
+.caixainfo{background-color:#d2d2d2;width:100%;display:inline-block;}
+.caixainfo1{width:50%;display:inline-block;vertical-align:middle;}
+.caixainfo1destaque{width:50%;display:inline-block;vertical-align:middle;}
+.caixainfodestaque{background-color:#00ab3a;width:100%;display:inline-block;}
+.caixainfo2{width:48%;display:inline-block;text-align:right;vertical-align:middle;}
+.caixainfodestaque2{width:48%;display:inline-block;text-align:right;vertical-align:middle;}
+.infobuton{padding:5px;vertical-align:middle;box-shadow:1px 1px 6px #00000017;text-align:center;background-color:#fff;font-size:medium;border-radius:5px;width:fit-content;}
+.infobuton1{display:inline-block;padding:10px;vertical-align:middle;}
+.infobutona{text-decoration:none;color:#828282;font-weight:bold;}
+.infobutonadestaque{text-decoration:none;color:#00ab3a;font-weight:bold;}
+.vermaisdiv{display:initial;width:100%;text-align:center;}
+.vermaisdivmobile{display:none;width:100%;text-align:center;}
+.vermais{display:initial;margin-bottom:10px;background-color:#00ab3a;font-size:larger;border:0px;border-radius:5px;color: #fff;cursor:pointer;}
+.estrelas{display:inline-block;height:30px;vertical-align:middle;}
+@media only screen and (max-width:500px){body{background-size:220%;}
+.vermaisdiv{display:none;width:100%;text-align:center;}
+.vermaisdivmobile{display:initial;width:100%;text-align:center;}
+.post-teaser{text-align:center;}
+.postthumb{width:80%;padding:2% 10% 2% 10%;}
+.tituloedescricao{width: 96%;}
+.imagelogo{height:auto;width:100%;padding-top:10px;display:inline-block;padding-left:0px;}
+.menuheader{display:none;}
+.conteudotitulo{color:#00ab3a;text-align:center;display:inline-block;width:96%;padding:2%;padding-top:0px;padding-left:0px;}
+.coluna2titulo{display:none;}
+.conteudo{width:96%;display:inline-block;padding-top:0px;padding-bottom:0px;padding-left:0px;padding:2%;}
+.headercabecalho{height:auto;}
+.coluna{width:100%;padding-left:0px;padding-right:0px;display:inline-block;vertical-align:none;padding-top:0px;padding-bottom:0px;}
+.ligar{display:inline-block;background-color:#00ab3a;color:#fff;border-width:0px;}
+.coluna1titulo{display:none;}
+.Coluna1{display:none;}
+.conteudotitulocidade{width:100%;}
+.conteudocidade{width:100%;}
+.caixainfo{background-color:#d2d2d2;width:100%;text-align:center;display:inline-block;}
+.caixainfo1{width:100%;display:table;text-align:center;vertical-align:middle;}
+.caixainfo1destaque{width:100%;display:table;text-align:center;vertical-align:middle;}
+.caixainfodestaque{background-color:#00ab3a;width:100%;dtext-align:center;isplay:inline-block;}
+.caixainfo2{width:100%;display:table;text-align:center;vertical-align:middle;}
+.caixainfodestaque2{width:100%;display:table;text-align:center;vertical-align:middle;}
+}

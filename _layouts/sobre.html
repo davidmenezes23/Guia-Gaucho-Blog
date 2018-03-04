@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  {% include head.html %}
+  {% include pagesobredescription.html %}
+  </head>
+  <body>
+<header class="site-header">
+<div class='headercabecalho'>
+<a href='{{ site.url }}'><img alt='Guia Gaúcho Logotipo' class='imagelogo' src='{{ site.url }}/assets/img/images/Guia-Gaucho-logo.png'/></a>
+<div class='menuheader'>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/cadastro/' style='text-decoration:none;color:#fff;'>Cadastro</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/sobre/' style='text-decoration:none;color:#fff;'>Sobre</a>
+  </div>
+<div class='menuitem'>
+<a href='{{ site.baseurl }}/contato/' style='text-decoration:none;color:#fff;'>Contato</a>
+  </div>
+  </div>
+</div>
+  
+  
+  <div class="pesquisatermo3">
+      <div class="pesquisatermo2" id="search-demo-container">
+      <input type="text" class="pesquisatermo" id="search-input" placeholder="Buscar...">
+      <ul class="resultados" id="results-container"></ul>
+    </div>
+  </div>
+    <script>
+      window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/_pages/uruguaiana.json',
+        searchResultTemplate: '<a class="searchlink" href="{url}"><li class="searchli">{title}</li></a>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+    </script>
+  
+</header>
+<div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>
+<h1 class="conteudotitulo"><b>Guia Gaúcho - Sobre</b></h1>
+<h2 class="coluna2titulo"><b>Anúncio</b></h2>
+<div class="conteudo">
+  {% if site.theme_settings.header_text %}
+  <div id="main" class="call-out"
+  style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
+    {{ site.theme_settings.header_text }}
+  </div>
+  {% endif %}
+
+  <div class="posts">
+    <div class="post-teaser1"><div class="post-teaser">
+<span class="conteudopost2" style="text-align: justify;">Projeto fundado em Janeiro de 2018 que busca proporcionar informações de contato e endereço dos mais diversos serviços/negócios do rio grande do sul. 
+Proporcionando para o usuário cadastrante uma divulgação de negocio totalmente gratuita.
+
+O Guia Gaúcho permite aos usuarios encontrarem o serviço/negocio que buscam em sua cidade no Rio Grande do Sul, bem como seus demais dado como: endereço, telefone, email e localização.<br/>
+<br/>
+Permite também aos donos de empresas divulgarem o seu serviço/negócio gratuitamente dentro do site através do formulario dentro da pagina <a href="https://www.guiagaucho.com/cadastro/">Cadastro</a>.<br/>
+<br/>
+  <img src="https://www.guiagaucho.com/assets/img/images/cadastro-exemplo.png" width="80%" alt="Exemplo de cadastro no Guia Gaúcho"/><br/>
+  <br/>
+O cadastro no Guia Gaúcho proporciona:<br/>
+ - Marketing e divulgação gratuita;<br/>
+ - Aumento na quantidade de clientes;<br/>
+ - Disponibilidade em cidades 467 cidades;<br/>
+ - Visibilidade online;<br/><br/>
+Além disso, podem optar por escolher um plano de destaque, aonde através deste apareceram nas primeiras empresas cadastradas no site. Para assinar o plano destaque visite a pagina <a href="https://www.guiagaucho.com/cadastro/">Cadastro</a>.
+<br/><br/>
+  <img src="https://www.guiagaucho.com/assets/img/images/destaque-exemplo.png" width="80%" alt="Exemplo de cadastro no Guia Gaúcho"/><br/>
+</span>
+    </div></div>
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+      <i class="fa fa-chevron-left"></i>
+      {{ site.theme_settings.str_previous_page }}
+    </a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+      {{ site.theme_settings.str_next_page }}
+      <i class="fa fa-chevron-right"></i>
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+<div class="coluna">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- guiagaucho -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2816982644079927"
+     data-ad-slot="5558915229"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+    {% include footer.html %}

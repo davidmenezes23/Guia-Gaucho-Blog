@@ -1,0 +1,64 @@
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://www.guiagaucho.com"
+
+# THEME-SPECIFIC CONFIGURATION
+include: ["_pages"]
+
+theme_settings:
+  # Meta
+  title: Guia Gaúcho - O seu Guia Cidade gaúcho
+  avatar:
+  favicon: assets/favicon.ico
+  gravatar: # Email MD5 hash
+  description: "O Guia Gaúcho é ideal para encontrar na sua cidade locais como lancherias, pizzarias, serviços, empresas, empregos, descontos, entre outros." 
+
+  # Icons
+  rss: true
+  email_address: "contato@guiagaucho.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook: "https://www.facebook.com/guiagauchooficial"
+  flickr:
+  gitlab:
+  github: "sylhare"
+  google_plus:
+  instagram: "https://www.instagram.com/guiagaucho"
+  keybase:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "guia_gaucho"
+  vimeo:
+  wordpress:
+  youtube:
+
+  # Scripts / Features 
+  google_analytics: "UA-113188635-1"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: true
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+excerpt_separator: <!-- more -->
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag]
+theme: type-on-strap # If using the theme as a jekyll theme gem
+exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
